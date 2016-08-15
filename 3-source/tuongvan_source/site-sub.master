@@ -20,67 +20,71 @@
             <div class="clr visible-sm visible-xs">
             </div>
             <div id="colAside" class="col-md-3 pull-right">
-                <section class="aside-cate">
-                <h4>Danh mục sản phẩm</h4>
-                <div class="aside-wrap">
-                    <asp:ListView ID="lstCommerceCategory" runat="server" DataSourceID="odsCommerceCategory"
-                        EnableModelValidation="True">
-                        <ItemTemplate>
-                            <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'><%# Eval("ProductCategoryName") %></a></li>
-                        </ItemTemplate>
-                        <LayoutTemplate>
-                            <ul>
-                                <li runat="server" id="itemPlaceholder"></li>
-                            </ul>
-                        </LayoutTemplate>   
-                    </asp:ListView>
-                    <asp:ObjectDataSource ID="odsCommerceCategory" runat="server" SelectMethod="ProductCategorySelectAll"
-                        TypeName="TLLib.ProductCategory">
-                        <SelectParameters>
-                            <asp:Parameter DefaultValue="1" Name="parentID" Type="Int32" />
-                            <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
-                            <asp:Parameter Name="IsShowOnMenu" Type="String" />
-                            <asp:Parameter Name="IsShowOnHomePage" Type="String" />
-                        </SelectParameters> 
-                    </asp:ObjectDataSource>
+                <div class="btn-banggia">
+                    <a href="bang-gia.aspx">Danh sách sản phẩm và bảng giá</a>
                 </div>
-            </section>
+                <div class="clr"></div>
                 <section class="aside-cate">
-                <h4>Tin tức nổi bật</h4>
-                <div class="aside-wrap">
-                    <asp:ListView ID="lstNews" runat="server" DataSourceID="odsNews"
-                        EnableModelValidation="True">
-                        <ItemTemplate>
-                            <li><a href='<%# progressTitle(Eval("ArticleTitle")) + "-tt-" + Eval("ArticleID") + ".aspx" %>'><%# Eval("ArticleTitle") %></a></li>
-                        </ItemTemplate>
-                        <LayoutTemplate>
-                            <ul>
-                                <li runat="server" id="itemPlaceholder"></li>
-                            </ul>
-                        </LayoutTemplate>
-                    </asp:ListView>
-                    <asp:ObjectDataSource ID="odsNews" runat="server" 
-                        SelectMethod="ArticleSelectAll" TypeName="TLLib.Article">
-                        <SelectParameters>
-                            <asp:Parameter Name="StartRowIndex" Type="String" />
-                            <asp:Parameter Name="EndRowIndex" Type="String" />
-                            <asp:Parameter Name="Keyword" Type="String" />
-                            <asp:Parameter Name="ArticleTitle" Type="String" />
-                            <asp:Parameter Name="Description" Type="String" />
-                            <asp:Parameter DefaultValue="2" Name="ArticleCategoryID" Type="String" />
-                            <asp:Parameter Name="Tag" Type="String" />
-                            <asp:Parameter Name="IsShowOnHomePage" Type="String" />
-                            <asp:Parameter Name="IsHot" Type="String" />
-                            <asp:Parameter Name="IsNew" Type="String" />
-                            <asp:Parameter Name="FromDate" Type="String" />
-                            <asp:Parameter Name="ToDate" Type="String" />
-                            <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
-                            <asp:Parameter Name="Priority" Type="String" />
-                            <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
-                        </SelectParameters>
-                    </asp:ObjectDataSource>
-                </div>
-            </section>
+                    <h4>Danh mục sản phẩm</h4>
+                    <div class="aside-wrap">
+                        <asp:ListView ID="lstCommerceCategory" runat="server" DataSourceID="odsCommerceCategory"
+                            EnableModelValidation="True">
+                            <ItemTemplate>
+                                <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'><%# Eval("ProductCategoryName") %></a></li>
+                            </ItemTemplate>
+                            <LayoutTemplate>
+                                <ul>
+                                    <li runat="server" id="itemPlaceholder"></li>
+                                </ul>
+                            </LayoutTemplate>
+                        </asp:ListView>
+                        <asp:ObjectDataSource ID="odsCommerceCategory" runat="server" SelectMethod="ProductCategorySelectAll"
+                            TypeName="TLLib.ProductCategory">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="1" Name="parentID" Type="Int32" />
+                                <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                                <asp:Parameter Name="IsShowOnMenu" Type="String" />
+                                <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                            </SelectParameters>
+                        </asp:ObjectDataSource>
+                    </div>
+                </section>
+                <section class="aside-cate">
+                    <h4>Tin tức nổi bật</h4>
+                    <div class="aside-wrap">
+                        <asp:ListView ID="lstNews" runat="server" DataSourceID="odsNews"
+                            EnableModelValidation="True">
+                            <ItemTemplate>
+                                <li><a href='<%# progressTitle(Eval("ArticleTitle")) + "-tt-" + Eval("ArticleID") + ".aspx" %>'><%# Eval("ArticleTitle") %></a></li>
+                            </ItemTemplate>
+                            <LayoutTemplate>
+                                <ul>
+                                    <li runat="server" id="itemPlaceholder"></li>
+                                </ul>
+                            </LayoutTemplate>
+                        </asp:ListView>
+                        <asp:ObjectDataSource ID="odsNews" runat="server"
+                            SelectMethod="ArticleSelectAll" TypeName="TLLib.Article">
+                            <SelectParameters>
+                                <asp:Parameter Name="StartRowIndex" Type="String" />
+                                <asp:Parameter Name="EndRowIndex" Type="String" />
+                                <asp:Parameter Name="Keyword" Type="String" />
+                                <asp:Parameter Name="ArticleTitle" Type="String" />
+                                <asp:Parameter Name="Description" Type="String" />
+                                <asp:Parameter DefaultValue="2" Name="ArticleCategoryID" Type="String" />
+                                <asp:Parameter Name="Tag" Type="String" />
+                                <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                                <asp:Parameter Name="IsHot" Type="String" />
+                                <asp:Parameter Name="IsNew" Type="String" />
+                                <asp:Parameter Name="FromDate" Type="String" />
+                                <asp:Parameter Name="ToDate" Type="String" />
+                                <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
+                                <asp:Parameter Name="Priority" Type="String" />
+                                <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
+                            </SelectParameters>
+                        </asp:ObjectDataSource>
+                    </div>
+                </section>
             </div>
         </div>
     </div>

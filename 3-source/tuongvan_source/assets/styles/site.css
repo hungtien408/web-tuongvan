@@ -531,7 +531,7 @@ a:visited, a:focus {
     text-align:right;
     margin-top:30px;
     background:url(../images/ongnc.png) no-repeat left top;
-    padding-bottom:120px;
+    padding-bottom:80px;
     background-size:cover;
 }
 .water-pipe .items{
@@ -1459,7 +1459,30 @@ a:visited, a:focus {
 
 }
 /*================*/
-
+.carousel-control {
+    opacity:1;
+}
+.btn-banggia{
+    width:100%;
+    display:block;
+    text-align:center;
+    margin-bottom:15px;
+    background:#e40d0d;
+    padding:7px;
+    border-radius:5px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.btn-banggia a{
+    color:#fff;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+.btn-banggia:hover{
+    background:#a90909;
+}
 /*================================footer=====================================*/
 
 /*================================main-content================================*/
