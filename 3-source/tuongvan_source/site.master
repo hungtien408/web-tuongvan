@@ -78,7 +78,7 @@
                         <div class="header-right-top">
                             <div class="hotline">
                                 <p>
-                                    Hotline: <span>(08) 3715 3667</span></p>
+                                    Hotline: <span>090 3824 299</span></p>
                             </div>
                             <div class="search-input">
                                 <%--<input type="text" name="name" value=" " />
@@ -117,7 +117,7 @@
             <div class="clr">
             </div>
             <div class="slide-header">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <div id="carousel-example-generic" class="carousel carousel-default slide" data-ride="carousel">
                     <!-- Indicators -->
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
@@ -127,6 +127,7 @@
                                     <img id="Img1" alt='<%# Eval("FileName") %>' src='<%# !string.IsNullOrEmpty(Eval("FileName").ToString()) ? "~/res/advertisement/" + Eval("FileName") : "~/assets/images/slide-img.png" %>'
                                         runat="server" />
                                     <div class="carousel-caption">
+                                        <%# Eval("CompanyName")%>
                                     </div>
                                 </div>
                             </ItemTemplate>
@@ -175,7 +176,7 @@
                                     <h3>CÔNG TY cổ phần SXTM tường vân</h3>
                                     <ul>
                                         <li>356A/14 Quốc lộ 1A, Xã An Phú Tây, Huyện Bình Chánh, Tp.HCM</li>
-                                        <li>Tel: (08) 3715 3667 - (08) 3715 3668	 - Fax: 08 3715 3461</li>                                        <li>Email: <a href="mailTo:info@tuongvan.vn">info@tuongvan.vn</a></li>
+                                        <li>Tel: <%--(08) 3715 3667 - (08) 3715 3668--%>08 3875 1145	 - Fax: 08 3715 3461</li>                                        <li>Email: <a href="mailTo:info@tuongvan.vn">info@tuongvan.vn</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -187,7 +188,7 @@
                                     <h3>showroom</h3>
                                     <ul>
                                         <li>356A/14 Quốc lộ 1A, Xã An Phú Tây, Huyện Bình Chánh, Tp.HCM</li>
-                                        <li>Tel: (08) 3715 3667 </li>                                        <li>Email: <a href="mailTo:cskh@tuongvan.vn">cskh@tuongvan.vn</a></li>
+                                        <li>Tel: 08 3875 1145 </li>                                        <li>Email: <a href="mailTo:cskh@tuongvan.vn">cskh@tuongvan.vn</a></li>
                                     </ul>
                                 </div>
                             </div>

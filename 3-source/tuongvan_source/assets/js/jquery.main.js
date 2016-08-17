@@ -84,6 +84,12 @@ function myfunload() {
     });
     $(".art-postcontent .col-md-4 .items, .dich-vu-cate .col-md-4 .thumbnail,.list-introduce .items").height(maxHeight);
 
+    /* add animate caption bootstrap's carousel */
+    $('.carousel-default').carousel({
+        interval: 10000,
+        pause: "false"
+    });
+    $('.carousel-inner > .item:first-child').addClass('active');
 }
 /*=========================================================================*/
 //================== scroll top

@@ -12,7 +12,7 @@
 ============================================================================================*/
 function initialize() {
     //10.7641152,106.6649788
-    var myLatlng = new google.maps.LatLng(10.6874213, 106.5933632);
+    var myLatlng = new google.maps.LatLng(10.686778, 106.593867);
     var mapOptions = {
         zoom: 15,
         center: myLatlng
