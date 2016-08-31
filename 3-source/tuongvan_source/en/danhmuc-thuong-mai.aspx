@@ -20,7 +20,8 @@
                                 <a href='<%# progressTitle(Eval("ProductNameEn")) + "-pci-" + Eval("CategoryID") + "-pi-" + Eval("ProductID") + ".aspx" %>'>Details</a>
                             </div>
                             <div class="btn-price">
-                                <a href='<%# progressTitle(Eval("ProductNameEn")) + "-bg-" + Eval("ProductID") + ".aspx" %>'>Price list</a>
+                                <%--<a href='<%# progressTitle(Eval("ProductNameEn")) + "-bg-" + Eval("ProductID") + ".aspx" %>'>Price list</a>--%>
+                                <a href="bang-gia.aspx">Price list</a>
                             </div>
                         </div>
                     </div>

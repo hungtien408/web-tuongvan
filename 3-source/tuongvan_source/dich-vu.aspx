@@ -21,8 +21,10 @@
                             <div class="caption-type">
                                 <%# Eval("Tag") %></div>
                             <div class="buttons">
-                                <a class="btn btn-theme " href='<%# progressTitle(Eval("ProductName")) + "-dv-" + Eval("ProductID") + ".aspx" %>'>Chi tiết</a> <a class="btn btn-theme "
-                                    href='<%# progressTitle(Eval("ProductName")) + "-bg-" + Eval("ProductID") + ".aspx" %>'>Bảng giá</a>
+                                <a class="btn btn-theme " href='<%# progressTitle(Eval("ProductName")) + "-dv-" + Eval("ProductID") + ".aspx" %>'>Chi tiết</a> <%--<a class="btn btn-theme "
+                                    href='<%# progressTitle(Eval("ProductName")) + "-bg-" + Eval("ProductID") + ".aspx" %>'>Bảng giá</a>--%>
+                                    <a class="btn btn-theme "
+                                    href="bang-gia.aspx">Bảng giá</a>
                             </div>
                         </div>
                     </div>

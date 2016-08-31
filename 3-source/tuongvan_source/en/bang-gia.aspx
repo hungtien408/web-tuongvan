@@ -7,9 +7,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <asp:ListView ID="lstPrice" runat="server" DataSourceID="odsPrice" EnableModelValidation="True">
         <ItemTemplate>
-            <li><a href='<%# !string.IsNullOrEmpty(Eval("LinkDownload").ToString()) ? "~/res/product/download/" + Eval("LinkDownload") : "" %>' target="_blank" runat="server">
-                <img src="assets/images/pdf.png" alt="" />
-                <%# Eval("FileNameEn")%> </a></li>
+            <li><a href='<%# !string.IsNullOrEmpty(Eval("FilePath").ToString()) ? "~/res/download/" + Eval("FilePath") : "" %>' target="_blank" runat="server">
+                <img src="../assets/images/pdf.png" alt="" />
+                <%# Eval("DownloadNameEn")%> </a></li>
         </ItemTemplate>
         <LayoutTemplate>
             <ul class="bang-gia-ul">
@@ -18,10 +18,11 @@
         </LayoutTemplate>
     </asp:ListView>
     <asp:ObjectDataSource ID="odsPrice" runat="server" 
-        SelectMethod="ProductDownloadSelectAll" TypeName="TLLib.ProductDownload">
+        SelectMethod="DownloadSelectAll" TypeName="TLLib.Download">
         <SelectParameters>
-            <asp:QueryStringParameter Name="ProductID" QueryStringField="bg" 
-                Type="String" />
+            <asp:Parameter Name="Keyword" Type="String" />
+            <asp:Parameter Name="DownloadName" Type="String" />
+            <asp:Parameter Name="DownloadCategoryID" Type="String" />
             <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
             <asp:Parameter Name="Priority" Type="String" />
             <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />

@@ -52,7 +52,7 @@
                 <h3>
                     <a href="dich-vu.aspx">services</a><i class="fa fa-arrow-right" aria-hidden="true"></i></h3>
                 <p>
-                    Vận tải - cho thuê xe du lịch - xe tải</p>
+                    Vận tải – Cho thuê xe du lịch</p>
             </div>
         </div>
     </div>

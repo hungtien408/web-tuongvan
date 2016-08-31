@@ -504,9 +504,9 @@
                                 <img alt="Thư viện ảnh" title="Thư viện ảnh" src="../assets/images/PhotoAlbum.png"
                                     onclick="openWindow('productphotoalbum.aspx?PI=<%# Eval("ProductID") %>','Thư viện ảnh')"
                                     style="cursor: pointer" />
-                                <img alt="File Download" title="Bảng Giá" src="../assets/images/filedownload.png"
+                                <%--<img alt="File Download" title="Bảng Giá" src="../assets/images/filedownload.png"
                                     onclick="openWindow('productdownload.aspx?PI=<%# Eval("ProductID") %>','Bảng Giá')"
-                                    style="cursor: pointer" />
+                                    style="cursor: pointer" />--%>
                             </div>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>

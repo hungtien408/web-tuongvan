@@ -137,6 +137,9 @@
                     <asp:RadMenuItem runat="server" Owner="RadMenu1" PostBack="False" Text="Dịch Vụ"
                         Font-Bold="True" NavigateUrl="~/ad/bilingual/services.aspx">
                     </asp:RadMenuItem>
+                    <asp:RadMenuItem runat="server" Owner="RadMenu1" PostBack="False" Text="Bảng Giá"
+                        Font-Bold="True" NavigateUrl="~/ad/bilingual/download.aspx">
+                    </asp:RadMenuItem>
                     <asp:RadMenuItem runat="server" Owner="RadMenu1" PostBack="False" Text="Tin Tức"
                         Font-Bold="True" NavigateUrl="~/ad/bilingual/news.aspx">
                     </asp:RadMenuItem>

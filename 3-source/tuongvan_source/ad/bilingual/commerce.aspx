@@ -498,7 +498,7 @@
                                 LegendText="{0} rates"></isp:ContentRating>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderStyle-Width="1%">
+                    <asp:GridTemplateColumn HeaderStyle-Width="1%" Visible="False">
                         <ItemTemplate>
                             <div style="width: 36px">
                                 <%--<img alt="Thư viện ảnh" title="Thư viện ảnh" src="../assets/images/PhotoAlbum.png"

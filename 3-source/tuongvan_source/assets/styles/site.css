@@ -726,7 +726,9 @@ a:visited, a:focus {
     line-height:38px;
     padding:0 15px;
 }
-
+.title-ft {
+    color: #cf0707;
+}
 /*map*/
 #map_canvas
 {
