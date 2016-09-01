@@ -71,12 +71,12 @@ a:visited, a:focus {
 .logo a {
     display: block;
     width: 100%;
-    padding:15px;
+    padding:0;
 }
 #header .logo {
     margin-top: 10px;
     float: left;
-    width: 260px;
+    width: 330px;
 }
 
 #header .header-right {
@@ -90,6 +90,14 @@ a:visited, a:focus {
 #header .header-right-top .hotline{
     display:inline-block;
     margin-right:25px;
+    border:1px solid #0f487e;
+    border-radius:7px;
+    padding:7px;
+}
+#header .header-right-top .hotline i{
+    color:#0f487e;
+    font-size:23px;
+    margin-right:5px;
 }
 #header .header-right-top .hotline p{
     color:#212121;

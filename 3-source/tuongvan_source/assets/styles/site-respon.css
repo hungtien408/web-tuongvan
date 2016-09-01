@@ -161,7 +161,7 @@
 }
 @media screen and (max-width: 480px) {
     #header .logo {
-        width: 180px;
+        width: 130px;
     }
     .intro-cate .items img.slide-tm-1 {
         right:0;

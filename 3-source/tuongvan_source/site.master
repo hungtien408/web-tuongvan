@@ -71,14 +71,14 @@
                 <div class="container">
                     <div class="logo">
                         <a id="A1" href="~/" runat="server">
-                            <img class="img-responsive" src="assets/images/logo.png" alt="" />
+                            <img class="img-responsive" src="assets/images/tuongvan-loho.png" alt="" />
                         </a>
                     </div>
                     <div class="header-right">
                         <div class="header-right-top">
                             <div class="hotline">
                                 <p>
-                                    Hotline: <span>090 3824 299</span></p>
+                                    <i class="fa fa-phone"></i> <span>090 3824 299</span></p>
                             </div>
                             <div class="search-input">
                                 <%--<input type="text" name="name" value=" " />
