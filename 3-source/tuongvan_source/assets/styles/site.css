@@ -1220,8 +1220,108 @@ a:visited, a:focus {
     font-size:13px;
     display:block;
 }
+.banggia-cate > h3 {
+    font-size:19px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
 
+/*tin-tuc*/
+.wrap-news .items {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
 
+    .wrap-news .items .items-img {
+        width: 210px;
+        border: 5px solid #fff;
+        box-shadow: 0px 0px 1px 2px #ddd;
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top;
+    }
+
+        .wrap-news .items .items-img img {
+            width: 100%;
+            height: auto;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+        }
+        .wrap-news .items .items-img:hover img {
+            opacity: 0.5;
+            filter: alpha(opacity=50); /* For IE8 and earlier */
+        }
+
+    .wrap-news .items .items-content {
+        width: 65%;
+        display: inline-block;
+    }
+
+        .wrap-news .items .items-content h3 {
+            margin: 0;
+            color: #000;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .wrap-news .items .items-content p {
+            font-size: 14px;
+            color: #6d6250;
+            line-height: 19px;
+            text-align: justify;
+        }
+
+        .wrap-news .items .items-content span a {
+            color: #b4b4b4;
+            font-size: 12px;
+            font-style: italic;
+            padding-right: 10px;
+            position: relative;
+        }
+
+            .wrap-news .items .items-content span a::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                border-left: 5px solid #b4b4b4;
+            }
+/*end tin-tuc*/
+/*pager*/
+.pager a, .pager > span {
+    background: #f5f5f5;
+    color: #282828;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px;
+    min-width: 28px;
+}
+.pager .first, .pager .last, .pager .prev, .pager .next {
+    padding: 0;
+    width: 28px;
+}
+.pager .first, .pager .last {
+    font-size: 12px;
+}
+.pager a:hover, .pager a.current {
+    background-color: #ea0000;
+    color: #fff;
+    text-decoration: none;
+}
+/*end pager*/
 
 
 

@@ -317,7 +317,7 @@
                                 CssClass="checkbox" />
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderText="Tin Hot" SortExpression="IsHot" Visible="False">
+                    <asp:GridTemplateColumn HeaderText="Tin Nổi Bật" SortExpression="IsHot">
                         <ItemTemplate>
                             <asp:CheckBox ID="chkIsHot" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsHot").ToString()) ? false : Eval("IsHot") %>'
                                 CssClass="checkbox" />
@@ -340,7 +340,7 @@
                             <%# string.Format("{0:dd/MM/yyyy hh:mm tt}", Eval("CreateDate"))%>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="ImageName" HeaderText="Ảnh" SortExpression="ImageName" Visible="False">
+                    <asp:GridTemplateColumn DataField="ImageName" HeaderText="Ảnh" SortExpression="ImageName">
                         <ItemTemplate>
                             <asp:Panel ID="Panel1" runat="server" Visible='<%# string.IsNullOrEmpty( Eval("ImageName").ToString()) ? false : true %>'>
                                 <img alt="" src='<%# "~/res/article/thumbs/" + Eval("ImageName") %>' width="80" runat="server"
@@ -372,7 +372,7 @@
                                 <hr />
                             </div>
                             <table class="search">
-                                <tr class="invisible">
+                                <tr>
                                     <td class="left" valign="top">
                                         Ảnh đại diện
                                     </td>
@@ -386,7 +386,7 @@
                                 </tr>
                                 <tr>
                                     <td class="left" colspan="2">
-                                        <asp:CheckBox ID="chkIsHot" runat="server" CssClass="checkbox" Text=" Tin Hot" Checked='<%# (Container is GridEditFormInsertItem) ? false : (string.IsNullOrEmpty(Eval("IsHot").ToString()) ? false : Eval("IsHot"))%>' Visible="False" />
+                                        <asp:CheckBox ID="chkIsHot" runat="server" CssClass="checkbox" Text=" Tin Nổi Bật" Checked='<%# (Container is GridEditFormInsertItem) ? false : (string.IsNullOrEmpty(Eval("IsHot").ToString()) ? false : Eval("IsHot"))%>' />
                                         &nbsp;&nbsp;
                                         <asp:CheckBox ID="chkIsNew" runat="server" CssClass="checkbox" Text=" Tin mới" Checked='<%# (Container is GridEditFormInsertItem) ? false : (string.IsNullOrEmpty(Eval("IsNew").ToString()) ? false : Eval("IsNew"))%>' Visible="False" />
                                         &nbsp;&nbsp;
@@ -459,7 +459,7 @@
                                             Width="500px"></asp:TextBox>
                                     </td>
                                 </tr>
-                                <tr class="invisible">
+                                <tr>
                                     <td class="left" valign="top">
                                         Mô tả
                                     </td>
@@ -543,7 +543,7 @@
                                             Width="500px"></asp:TextBox>
                                     </td>
                                 </tr>
-                                <tr class="invisible">
+                                <tr>
                                     <td class="left" valign="top">
                                         Mô tả
                                     </td>

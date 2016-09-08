@@ -196,7 +196,7 @@
                             <%# Eval("FilePath")%>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderText="Danh mục" DataField="DownloadCategoryName" SortExpression="DownloadCategoryName" Visible="False">
+                    <asp:GridTemplateColumn HeaderText="Danh mục" DataField="DownloadCategoryName" SortExpression="DownloadCategoryName">
                         <ItemTemplate>
                             <%# Eval("DownloadCategoryName")%>
                         </ItemTemplate>
@@ -274,7 +274,7 @@
                                             Language="vi-VN" InputSize="69" />
                                     </td>
                                 </tr>
-                                <tr class="invisible">
+                                <tr>
                                     <td class="left">
                                         Danh mục
                                     </td>

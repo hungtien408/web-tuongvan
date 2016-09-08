@@ -5,24 +5,51 @@
     <asp:Label ID="lblTitle" runat="server" Text=""></asp:Label>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <asp:ListView ID="lstPrice" runat="server" DataSourceID="odsPrice" EnableModelValidation="True">
+    <asp:ListView ID="lstPriceCategory" runat="server" DataSourceID="odsPriceCategory"
+        EnableModelValidation="True">
         <ItemTemplate>
-            <li><a href='<%# !string.IsNullOrEmpty(Eval("FilePath").ToString()) ? "~/res/download/" + Eval("FilePath") : "" %>' target="_blank" runat="server">
-                <img src="assets/images/pdf.png" alt="" />
-                <%# Eval("DownloadName")%> </a></li>
+            <div class="banggia-cate">
+                <h3>
+                    <%# Eval("DownloadCategoryName")%></h3>
+                <asp:HiddenField ID="hdnDownloadCategoryID" Value='<%# Eval("DownloadCategoryID") %>'
+                    runat="server" />
+                <asp:ListView ID="lstPrice" runat="server" DataSourceID="odsPrice" EnableModelValidation="True">
+                    <ItemTemplate>
+                        <li><a id="A1" href='<%# !string.IsNullOrEmpty(Eval("FilePath").ToString()) ? "~/res/download/" + Eval("FilePath") : "" %>'
+                            target="_blank" runat="server">
+                            <img src="assets/images/pdf.png" alt="" />
+                            <%# Eval("DownloadName")%>
+                        </a></li>
+                    </ItemTemplate>
+                    <LayoutTemplate>
+                        <ul class="bang-gia-ul">
+                            <li runat="server" id="itemPlaceholder"></li>
+                        </ul>
+                    </LayoutTemplate>
+                </asp:ListView>
+                <asp:ObjectDataSource ID="odsPrice" runat="server" SelectMethod="DownloadSelectAll"
+                    TypeName="TLLib.Download">
+                    <SelectParameters>
+                        <asp:Parameter Name="Keyword" Type="String" />
+                        <asp:Parameter Name="DownloadName" Type="String" />
+                        <asp:ControlParameter ControlID="hdnDownloadCategoryID" Name="DownloadCategoryID"
+                            PropertyName="Value" Type="String" />
+                        <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
+                        <asp:Parameter Name="Priority" Type="String" />
+                        <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+            </div>
         </ItemTemplate>
         <LayoutTemplate>
-            <ul class="bang-gia-ul">
-                <li runat="server" id="itemPlaceholder"></li>
-            </ul>
+            <span runat="server" id="itemPlaceholder" />
         </LayoutTemplate>
     </asp:ListView>
-    <asp:ObjectDataSource ID="odsPrice" runat="server" 
-        SelectMethod="DownloadSelectAll" TypeName="TLLib.Download">
+    <asp:ObjectDataSource ID="odsPriceCategory" runat="server" SelectMethod="DownloadCategorySelectAll"
+        TypeName="TLLib.DownloadCategory">
         <SelectParameters>
-            <asp:Parameter Name="Keyword" Type="String" />
-            <asp:Parameter Name="DownloadName" Type="String" />
-            <asp:Parameter Name="DownloadCategoryID" Type="String" />
+            <asp:Parameter Name="IsShowOnMenu" Type="String" />
+            <asp:Parameter Name="IsShowOnHomePage" Type="String" />
             <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
             <asp:Parameter Name="Priority" Type="String" />
             <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />

@@ -138,7 +138,15 @@
                         Font-Bold="True" NavigateUrl="~/ad/bilingual/services.aspx">
                     </asp:RadMenuItem>
                     <asp:RadMenuItem runat="server" Owner="RadMenu1" PostBack="False" Text="Bảng Giá"
-                        Font-Bold="True" NavigateUrl="~/ad/bilingual/download.aspx">
+                        Font-Bold="True">
+                        <Items>
+                            <asp:RadMenuItem runat="server" Text="Quản Lý Bảng Giá" NavigateUrl="~/ad/bilingual/download.aspx">
+                            </asp:RadMenuItem>
+                            <asp:RadMenuItem runat="server" IsSeparator="True">
+                            </asp:RadMenuItem>
+                            <asp:RadMenuItem runat="server" Text="Quản Lý Danh Mục" NavigateUrl="~/ad/bilingual/downloadcategory.aspx">
+                            </asp:RadMenuItem>
+                        </Items>
                     </asp:RadMenuItem>
                     <asp:RadMenuItem runat="server" Owner="RadMenu1" PostBack="False" Text="Tin Tức"
                         Font-Bold="True" NavigateUrl="~/ad/bilingual/news.aspx">

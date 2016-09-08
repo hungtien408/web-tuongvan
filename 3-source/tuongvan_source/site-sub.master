@@ -74,7 +74,7 @@
                                 <asp:Parameter DefaultValue="2" Name="ArticleCategoryID" Type="String" />
                                 <asp:Parameter Name="Tag" Type="String" />
                                 <asp:Parameter Name="IsShowOnHomePage" Type="String" />
-                                <asp:Parameter Name="IsHot" Type="String" />
+                                <asp:Parameter DefaultValue="True" Name="IsHot" Type="String" />
                                 <asp:Parameter Name="IsNew" Type="String" />
                                 <asp:Parameter Name="FromDate" Type="String" />
                                 <asp:Parameter Name="ToDate" Type="String" />

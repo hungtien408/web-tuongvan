@@ -78,7 +78,7 @@
                         <div class="header-right-top">
                             <div class="hotline">
                                 <p>
-                                    <i class="fa fa-phone"></i> <span>090 3824 299</span></p>
+                                    <i class="fa fa-phone"></i> <span>0908 302 629</span></p>
                             </div>
                             <div class="search-input">
                                 <%--<input type="text" name="name" value=" " />
@@ -107,6 +107,7 @@
                                     </ul>--%>
                             </li>
                             <li><a href="dich-vu.aspx">dịch vụ</a></li>
+                            <li><a href="tin-tuc.aspx">tin tức</a></li>
                             <li><a href="lien-he.aspx">liên hệ</a></li>
                         </ul>
                         <a class="panel-a menu-mo ipadmo-992" href="#menumobile" data-position="true" data-type="false">
@@ -173,10 +174,10 @@
                                     <img src="assets/images/ft1.png" alt="Alternate Text" />
                                 </div>
                                 <div class="info-ft">
-                                    <h3>CÔNG TY cổ phần SXTM tường vân</h3>
+                                    <h3>Công ty cổ phần sản xuất và thương mại Tường Vân</h3>
                                     <ul>
                                         <li>356A/14 Quốc lộ 1A, Xã An Phú Tây, Huyện Bình Chánh, Tp.HCM</li>
-                                        <li>Tel: <%--(08) 3715 3667 - (08) 3715 3668--%>(848) 3875 1145	 - Fax: (848) 3875 1145</li>                                        <li>Email: <a href="mailTo:tv.68tuongvan@yahoo.com">tv.68tuongvan@yahoo.com</a></li>
+                                        <li>Tel: <%--(08) 3715 3667 - (08) 3715 3668--%>08 3875 6761	 - Fax: 08 3875 1145</li>                                        <li>Email: <a href="mailTo:tv.68tuongvan@yahoo.com">tv.68tuongvan@yahoo.com</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -188,7 +189,7 @@
                                     <h3>showroom</h3>
                                     <ul>
                                         <li>356A/14 Quốc lộ 1A, Xã An Phú Tây, Huyện Bình Chánh, Tp.HCM</li>
-                                        <li>Tel: (848) 3875 1145 </li>                                        <li>Email: <a href="mailto:tv.68tuongvan@yahoo.com">tv.68tuongvan@yahoo.com</a></li>
+                                        <li>Tel: 08 3760 3943</li>                                        <li>Email: <a href="mailto:tv.68tuongvan@yahoo.com">tv.68tuongvan@yahoo.com</a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -33,10 +33,10 @@ function initialize() {
 
     var contentString =
         '<div class="map-info">' +
-            '<h4 class="title-ft">CÔNG TY CỔ PHẦN SXTM TƯỜNG VÂN</h4>' +
+            '<h4 class="title-ft">CÔNG TY CỔ PHẦN SẢN XUẤT VÀ THƯƠNG MẠI TƯỜNG VÂN</h4>' +
             '<ul class="address">' +
                 '<li><span class="fa fa-map-marker"></span>356A/14 Quốc lộ 1A, Xã An Phú Tây, Huyện Bình Chánh, Tp.HCM</li>' +
-                '<li><span class="fa fa-phone"></span>Tel: (848) 3875 1145 - Fax: (848) 3875 1145</li>' +
+                '<li><span class="fa fa-phone"></span>Tel: 08 3875 6761 - Fax: 08 3875 1145</li>' +
                 '<li><span class="fa fa-envelope"></span><a href="mailto:tv.68tuongvan@yahoo.com">Email: tv.68tuongvan@yahoo.com</a></li>' +
             '</ul>' +
         '</div>'
