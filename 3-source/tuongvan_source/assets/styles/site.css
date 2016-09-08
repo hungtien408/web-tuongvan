@@ -1215,6 +1215,9 @@ a:visited, a:focus {
 .bang-gia-ul li{
     padding:10px 0;
     border-bottom:1px dashed #ddd;
+    width: calc(33.3333% - 4px);
+    display: inline-block;
+    vertical-align: top;
 }
 .bang-gia-ul li a{
     font-size:13px;
@@ -1224,6 +1227,9 @@ a:visited, a:focus {
     font-size:19px;
     text-transform:uppercase;
     font-weight:bold;
+}
+.bang-gia-ul li a > img {
+    width: 30px;
 }
 
 /*tin-tuc*/
@@ -1698,8 +1704,10 @@ a:visited, a:focus {
 @media (min-width: 768px) and (max-width: 992px){ 
 	
 }
-@media screen and (max-width: 767px){
-	
+@media screen and (max-width: 720px){
+	.bang-gia-ul li{
+        width: calc(50% - 4px);
+    }
 }
 @media screen and (max-width: 639px){
 	
@@ -1707,8 +1715,10 @@ a:visited, a:focus {
 @media screen and (max-width: 549px){
 	
 }
-@media screen and (max-width: 479px){
-	
+@media screen and (max-width: 480px){
+	.bang-gia-ul li{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 320px){
 	
