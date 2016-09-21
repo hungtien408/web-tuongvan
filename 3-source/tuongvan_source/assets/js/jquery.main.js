@@ -107,3 +107,7 @@ $('.scroll-to-top').on('click', function (e) {
     return false;
 });
 
+$(window).ready(function () {
+    $('.aside-cate .aside-wrap ul > li > ul').addClass('has-sub');
+    $('.has-sub').parent('li').addClass('parent-sub');
+});

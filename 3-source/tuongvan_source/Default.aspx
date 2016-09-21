@@ -98,44 +98,59 @@
                 </div>
                 <div class="home-content-right">
                     <div class="tygia">
-                        <ul>
+                        <div role="tabpanel">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                    data-toggle="tab">tỷ giá ngoại tệ</a> </li>
+                                <li role="presentation"><a href="#tab" aria-controls="tab" role="tab" data-toggle="tab">
+                                    tỷ giá vàng</a> </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <div class="table-tygia">
+                                        <asp:GridView ID="gridViewFromObject" runat="server" CssClass="css-exchangerate"
+                                            AutoGenerateColumns="false" EnableModelValidation="True" CellPadding="4" ForeColor="#333333"
+                                            GridLines="None">
+                                            <AlternatingRowStyle BackColor="White" />
+                                            <EditRowStyle BackColor="#2461BF" />
+                                            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                                            <%--<HeaderStyle ForeColor="#666" Font-Size="11px" Font-Names="Arial" />--%>
+                                            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                                            <RowStyle BackColor="#EDF7EE" />
+                                            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                                            <Columns>
+                                                <asp:TemplateField HeaderText="Loại">
+                                                    <ItemTemplate>
+                                                        <%# Eval("CurrencyCode")%>
+                                                    </ItemTemplate>
+                                                </asp:TemplateField>
+                                            </Columns>
+                                            <Columns>
+                                                <asp:TemplateField HeaderText="Mua vào">
+                                                    <ItemTemplate>
+                                                        <%# Eval("Buy")%>
+                                                    </ItemTemplate>
+                                                </asp:TemplateField>
+                                            </Columns>
+                                            <Columns>
+                                                <asp:TemplateField HeaderText="Bán ra">
+                                                    <ItemTemplate>
+                                                        <%# Eval("Sell")%>
+                                                    </ItemTemplate>
+                                                </asp:TemplateField>
+                                            </Columns>
+                                        </asp:GridView>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab">
+                                    <iframe frameborder="0" marginwidth="0" marginheight="0" src="http://thienduongweb.com/tool/weather/?r=0&w=0&g=1&col=1&d=0" width="100%" height="480" scrolling="no"></iframe> 
+                                </div>
+                            </div>
+                        </div>
+                        <%--<ul>
                             <li>tỷ giá ngoại tệ</li>
                             <li>tỷ giá vàng</li>
-                        </ul>
-                        <div class="table-tygia">
-                            <asp:GridView ID="gridViewFromObject" runat="server" CssClass="css-exchangerate"
-                                AutoGenerateColumns="false" EnableModelValidation="True" CellPadding="4" ForeColor="#333333"
-                                GridLines="None">
-                                <AlternatingRowStyle BackColor="White" />
-                                <EditRowStyle BackColor="#2461BF" />
-                                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                                <%--<HeaderStyle ForeColor="#666" Font-Size="11px" Font-Names="Arial" />--%>
-                                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-                                <RowStyle BackColor="#EDF7EE" />
-                                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-                                <Columns>
-                                    <asp:TemplateField HeaderText="Loại">
-                                        <ItemTemplate>
-                                            <%# Eval("CurrencyCode")%>
-                                        </ItemTemplate>
-                                    </asp:TemplateField>
-                                </Columns>
-                                <Columns>
-                                    <asp:TemplateField HeaderText="Mua vào">
-                                        <ItemTemplate>
-                                            <%# Eval("Buy")%>
-                                        </ItemTemplate>
-                                    </asp:TemplateField>
-                                </Columns>
-                                <Columns>
-                                    <asp:TemplateField HeaderText="Bán ra">
-                                        <ItemTemplate>
-                                            <%# Eval("Sell")%>
-                                        </ItemTemplate>
-                                    </asp:TemplateField>
-                                </Columns>
-                            </asp:GridView>
-                        </div>
+                        </ul>--%>
                     </div>
                     <div class="tke">
                         <h3>

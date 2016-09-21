@@ -522,13 +522,33 @@ a:visited, a:focus {
     color:#fff;
     font-size:14px;
     text-transform:uppercase;
-    padding:0 15px;
+    padding:0;
     border-right:1px solid #516476;
     width:calc(50% - 2px);
 }
 .home-content-right .tygia ul li:last-child {
     border:0;
 }
+.tygia .nav-tabs > li.active > a, .tygia .nav-tabs > li.active > a:hover, .tygia .nav-tabs > li.active > a:focus {
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+}
+.tygia .nav-tabs>li>a:hover {
+    border-color: #eee #eee #ddd;
+}
+.tygia .nav > li > a:hover, .tygia .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+.tygia .nav-tabs > li > a {
+    margin-right: 0;
+    border: 0;
+    border-radius: 0;
+    color:#fff;
+}
+
+
 .home-content-right .tygia .table-tygia {
     height:125px;
     overflow-y:scroll;
@@ -918,25 +938,41 @@ a:visited, a:focus {
 }
 .aside-cate .aside-wrap {
     border: 1px solid #bfbfbf;
-    padding: 5px 10px;
+    padding: 5px 0;
 }
 .aside-cate .aside-wrap ul li {
-    padding: 5px 0;
-    border-bottom: 1px dashed #ddd;
     position: relative;
+    padding:0 15px;
 }
-.aside-cate .aside-wrap ul li::before {
+.aside-cate .aside-wrap ul li.parent-sub::before {
     position: absolute;
     content: "";
     width: 0;
     height: 0;
     border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid #000;
+    border-bottom: 5px solid transparent; 
+    border-right: 5px solid #000; 
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 15px;
     margin: auto;
+}
+.aside-cate .aside-wrap ul li .has-sub {
+    position:absolute;
+    background:#fff;
+    border-radius:10px;
+    width:250px;
+    right:100%;
+    top:0;
+    border:1px solid #ddd;
+    display:none;
+    box-shadow:0 0 10px 0 rgba(0,0,0,0.5);
+}
+.aside-cate .aside-wrap ul li:hover .has-sub {
+    display:block;
+}
+.aside-cate .aside-wrap ul li .has-sub li:last-child a{
+    border-bottom:0;
 }
 .aside-cate .aside-wrap ul li a {
     color: #464648;
@@ -946,8 +982,12 @@ a:visited, a:focus {
     transition: all .5s;
     padding-left: 15px;
     display: block;
+    border-bottom: 1px dashed #ddd;
+    display:block;
+    padding: 5px 0;
+    padding-left:15px;
 }
-.aside-cate .aside-wrap ul li:hover a {
+.aside-cate .aside-wrap ul li:hover > a {
     color: red;
     text-decoration: none;
 }

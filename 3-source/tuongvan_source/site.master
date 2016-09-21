@@ -71,7 +71,7 @@
                 <div class="container">
                     <div class="logo">
                         <a id="A1" href="~/" runat="server">
-                            <img class="img-responsive" src="assets/images/tuongvan-loho.png" alt="" />
+                            <img class="img-responsive" src="assets/images/logo-3.png" alt="" />
                         </a>
                     </div>
                     <div class="header-right">
@@ -176,7 +176,7 @@
                                 <div class="info-ft">
                                     <h3>Công ty cổ phần sản xuất và thương mại Tường Vân</h3>
                                     <ul>
-                                        <li>356A/14 Quốc lộ 1A, Xã An Phú Tây, Huyện Bình Chánh, Tp.HCM</li>
+                                        <li>356A/14 Quốc lộ 1, Xã An Phú Tây, Huyện Bình Chánh, Tp.HCM</li>
                                         <li>Tel: <%--(08) 3715 3667 - (08) 3715 3668--%>08 3875 6761	 - Fax: 08 3875 1145</li>                                        <li>Email: <a href="mailTo:tv.68tuongvan@yahoo.com">tv.68tuongvan@yahoo.com</a></li>
                                     </ul>
                                 </div>
@@ -188,7 +188,7 @@
                                 <div class="info-ft">
                                     <h3>showroom</h3>
                                     <ul>
-                                        <li>356A/14 Quốc lộ 1A, Xã An Phú Tây, Huyện Bình Chánh, Tp.HCM</li>
+                                        <li>356A/14 Quốc lộ 1, Xã An Phú Tây, Huyện Bình Chánh, Tp.HCM</li>
                                         <li>Tel: 08 3760 3943</li>                                        <li>Email: <a href="mailto:tv.68tuongvan@yahoo.com">tv.68tuongvan@yahoo.com</a></li>
                                     </ul>
                                 </div>

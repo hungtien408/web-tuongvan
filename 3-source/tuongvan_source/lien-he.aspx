@@ -26,7 +26,7 @@
                         solving, improving quality local solutions technology developing nations transform
                         the world. Medical advocate social entrepreneurship.</div>--%>
                     <p>
-                        <span class="fa fa-map-marker"></span>356A/14 Quốc lộ 1A, Xã An Phú Tây, Huyện Bình
+                        <span class="fa fa-map-marker"></span>356A/14 Quốc lộ 1, Xã An Phú Tây, Huyện Bình
                         Chánh, Tp.HCM</p>
                     <p>
                         <span class="fa fa-phone"></span>Tel: <%--(08) 3715 3667 - (08) 3715 3668--%>08 3875 6761 - Fax: 08 3875 1145</p>

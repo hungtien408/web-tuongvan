@@ -54,6 +54,10 @@
     .container {
         width:750px;
     }
+    #header .logo {
+        width:180px;
+        margin-top:20px;
+    }
     #header .header-right {
         position:relative;
     }

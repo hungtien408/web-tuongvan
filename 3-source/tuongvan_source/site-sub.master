@@ -23,14 +23,75 @@
                 <div class="btn-banggia">
                     <a href="bang-gia.aspx">Danh sách sản phẩm và bảng giá</a>
                 </div>
-                <div class="clr"></div>
+                <div class="clr">
+                </div>
+                <%--<section class="aside-cate">
+                    <h4>Danh mục sản phẩm</h4>
+                    <div class="aside-wrap">
+                        <ul>
+                            <li><a href="#">Nhựa Bình Minh</a>
+                                <ul>
+                                    <li><a href="#">Nhựa Bình Minh 1</a></li>
+                                    <li><a href="#">Nhựa Bình Minh 2</a></li>
+                                    <li><a href="#">Nhựa Bình Minh 3</a></li>
+                                    <li><a href="#">Nhựa Bình Minh 4</a></li>
+                                    <li><a href="#">Nhựa Bình Minh 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Nhựa Đệ Nhất</a></li>
+                            <li><a href="#">Nhựa Minh Hùng</a></li>
+                            <li><a href="#">Nhựa Hoa Sen</a></li>
+                            <li><a href="#">Các nhà cung cấp khác</a></li>
+                        </ul>
+                    </div>
+                </section>--%>
                 <section class="aside-cate">
                     <h4>Danh mục sản phẩm</h4>
                     <div class="aside-wrap">
                         <asp:ListView ID="lstCommerceCategory" runat="server" DataSourceID="odsCommerceCategory"
                             EnableModelValidation="True">
                             <ItemTemplate>
-                                <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'><%# Eval("ProductCategoryName") %></a></li>
+                                <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'><%# Eval("ProductCategoryName") %></a>
+                                <asp:HiddenField ID="hdnCategoryID" runat="server" Value='<%# Eval("ProductCategoryID") %>'></asp:HiddenField>
+                                    <asp:ListView ID="lstComerce" runat="server" DataSourceID="odsCommerce"
+                                        EnableModelValidation="True">
+                                        <ItemTemplate>
+                                        <li><a href='<%# progressTitle(Eval("ProductName")) + "-pci-" + Eval("CategoryID") + "-pi-" + Eval("ProductID") + ".aspx" %>'><%# Eval("ProductName") %></a></li>
+                                        </ItemTemplate>
+                                        <LayoutTemplate>
+                                            <ul>
+                                        <li runat="server" id="itemPlaceholder"></li>
+                                        </ul>
+                                        </LayoutTemplate>   
+                                </asp:ListView>
+                                <asp:ObjectDataSource ID="odsCommerce" runat="server" 
+                                SelectMethod="ProductSelectAll" TypeName="TLLib.Product">
+                                    <SelectParameters>
+                                        <asp:Parameter Name="StartRowIndex" Type="String" />
+                                        <asp:Parameter Name="EndRowIndex" Type="String" />
+                                        <asp:Parameter Name="Keyword" Type="String" />
+                                        <asp:Parameter Name="ProductName" Type="String" />
+                                        <asp:Parameter Name="Description" Type="String" />
+                                        <asp:Parameter Name="PriceFrom" Type="String" />
+                                        <asp:Parameter Name="PriceTo" Type="String" />
+                                        <asp:ControlParameter Name="CategoryID" Type="String" ControlID="hdnCategoryID" />
+                                        <asp:Parameter Name="ManufacturerID" Type="String" />
+                                        <asp:Parameter Name="OriginID" Type="String" />
+                                        <asp:Parameter Name="Tag" Type="String" />
+                                        <asp:Parameter Name="InStock" Type="String" />
+                                        <asp:Parameter Name="IsHot" Type="String" />
+                                        <asp:Parameter Name="IsNew" Type="String" />
+                                        <asp:Parameter Name="IsBestSeller" Type="String" />
+                                        <asp:Parameter Name="IsSaleOff" Type="String" />
+                                        <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                                        <asp:Parameter Name="FromDate" Type="String" />
+                                        <asp:Parameter Name="ToDate" Type="String" />
+                                        <asp:Parameter Name="Priority" Type="String" />
+                                        <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
+                                        <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
+                                    </SelectParameters>
+                                </asp:ObjectDataSource>
+                                </li>
                             </ItemTemplate>
                             <LayoutTemplate>
                                 <ul>
