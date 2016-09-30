@@ -67,8 +67,8 @@
                                 <asp:ObjectDataSource ID="odsCommerce" runat="server" 
                                 SelectMethod="ProductSelectAll" TypeName="TLLib.Product">
                                     <SelectParameters>
-                                        <asp:Parameter Name="StartRowIndex" Type="String" />
-                                        <asp:Parameter Name="EndRowIndex" Type="String" />
+                                        <asp:Parameter DefaultValue="1" Name="StartRowIndex" Type="String" />
+                                        <asp:Parameter DefaultValue="6" Name="EndRowIndex" Type="String" />
                                         <asp:Parameter Name="Keyword" Type="String" />
                                         <asp:Parameter Name="ProductName" Type="String" />
                                         <asp:Parameter Name="Description" Type="String" />

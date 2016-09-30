@@ -24,7 +24,7 @@
                                 <a class="btn btn-theme " href='<%# progressTitle(Eval("ProductNameEn")) + "-dv-" + Eval("ProductID") + ".aspx" %>'>Details</a> <%--<a class="btn btn-theme "
                                     href='<%# progressTitle(Eval("ProductNameEn")) + "-bg-" + Eval("ProductID") + ".aspx" %>'>Price list</a>--%>
                                     <a class="btn btn-theme "
-                                    href="bang-gia.aspx">Price list</a>
+                                    href="bang-gia-xe.aspx">Price list</a>
                             </div>
                         </div>
                     </div>
