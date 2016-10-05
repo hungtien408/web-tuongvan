@@ -24,7 +24,7 @@
                                 <a class="btn btn-theme " href='<%# progressTitle(Eval("ProductNameEn")) + "-dv-" + Eval("ProductID") + ".aspx" %>'>Details</a> <%--<a class="btn btn-theme "
                                     href='<%# progressTitle(Eval("ProductNameEn")) + "-bg-" + Eval("ProductID") + ".aspx" %>'>Price list</a>--%>
                                     <a class="btn btn-theme "
-                                    href="bang-gia-xe.aspx">Price list</a>
+                                    href="http://www.tuongvan.com.vn/res/download/Bang%20gia%20chay%20xe.pdf">Price list</a>
                             </div>
                         </div>
                     </div>
