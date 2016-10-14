@@ -46,7 +46,7 @@
                                     <asp:Label ID="Label1" runat="server" Text='<%# Eval("Content") %>'></asp:Label>
                                 </div>
                                 <div class="price">
-                                    <strong>Giá liên hệ: <span> 0908 302 629</span></strong> <%--<i class="fa fa-info-circle">
+                                    <strong>Giá liên hệ: <span> 0903 824 299</span></strong> <%--<i class="fa fa-info-circle">
                                     </i>--%>
                                 </div>
                             </div>

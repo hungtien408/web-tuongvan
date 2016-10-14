@@ -46,7 +46,7 @@
                                     <asp:Label ID="Label1" runat="server" Text='<%# Eval("ContentEn") %>'></asp:Label>
                                 </div>
                                 <div class="price">
-                                    <strong>Contact price: <span> 0908 302 629</span></strong> 
+                                    <strong>Contact price: <span> 0903 824 299</span></strong> 
                                 </div>
                             </div>
                         </ItemTemplate>
