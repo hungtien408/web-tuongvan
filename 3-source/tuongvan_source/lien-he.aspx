@@ -31,7 +31,7 @@
                     <p>
                         <span class="fa fa-phone"></span>Tel: <%--(08) 3715 3667 - (08) 3715 3668--%>08 3875 6761 - Fax: 08 3875 1145</p>
                     <p>
-                        <span class="fa fa-envelope"></span>Email:<a href="mailto:tv.68tuongvan@yahoo.com">tv.68tuongvan@yahoo.com</a></p>
+                        <span class="fa fa-envelope"></span>Email:<a href="mailto:tv.68tuongvan@yahoo.com.vn">tv.68tuongvan@yahoo.com.vn</a></p>
                 </div>
             </div>
             <div class="col-md-6">

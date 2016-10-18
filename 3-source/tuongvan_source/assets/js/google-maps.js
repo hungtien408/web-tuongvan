@@ -37,7 +37,7 @@ function initialize() {
             '<ul class="address">' +
                 '<li><span class="fa fa-map-marker"></span>356A/14 Quốc lộ 1, Xã An Phú Tây, Huyện Bình Chánh, Tp.HCM</li>' +
                 '<li><span class="fa fa-phone"></span>Tel: 08 3875 6761 - Fax: 08 3875 1145</li>' +
-                '<li><span class="fa fa-envelope"></span><a href="mailto:tv.68tuongvan@yahoo.com">Email: tv.68tuongvan@yahoo.com</a></li>' +
+                '<li><span class="fa fa-envelope"></span><a href="mailto:tv.68tuongvan@yahoo.com.vn">Email: tv.68tuongvan@yahoo.com.vn</a></li>' +
             '</ul>' +
         '</div>'
     ;
